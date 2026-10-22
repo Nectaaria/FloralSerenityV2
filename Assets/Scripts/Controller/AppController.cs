@@ -4,6 +4,7 @@ public class AppController : MonoBehaviour
 {
     
     public static AppController ApplicationController;
+    public SoundManager SoundManagerInstance;
 
     public void Awake()
     {
@@ -19,7 +20,7 @@ public class AppController : MonoBehaviour
     }
     public void Start()
     {
-        
+        SoundManagerInstance.PlayMainMusic();
         //TODO : later --> get the save
     }
 }
